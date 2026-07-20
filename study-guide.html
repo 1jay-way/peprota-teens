@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide - RCCG Teen Affair</title>
+    <link rel="stylesheet" href="study-guide.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-row">
+            <div class="site-brand">
+                <div class="logo-circle">R</div>
+                <div>
+                    <span class="eyebrow">RCCG Teen Affair</span>
+                    <h1>Study Guide</h1>
+                </div>
+            </div>
+            <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sunday-school.html">Sunday School</a></li>
+                    <li><a href="study-guide.html">Study Guide</a></li>
+                    <li><a href="counselling.html">Guidance And Counselling</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-copy">
+          <span class="hero-eyebrow">Connect. Reflect. Grow.</span>
+          <h2>Interactive Bible study tools for teens</h2>
+          <p>Explore Scripture, join guided lessons, and keep your study notes all in one place.</p>
+          <a href="#study-guide" class="hero-btn">Start the Guide</a>
+        </div>
+        <div class="hero-visual">
+          <img src="study-guild.jpg" alt="Open Bible with notes">
+        </div>
+      </section>
+<section id="study-guide" class="study-guild">
+  <div class="study-guild-container">
+
+    <!-- Header -->
+    <div class="study-guild-header">
+      <h2>Study Guide</h2>
+      <p>Deepening our understanding of God's Word together</p>
+    </div>
+
+    <!-- Content -->
+    <div class="study-guild-content">
+
+      <!-- Bible Image -->
+      <div class="bible-image">
+        <div class="imgs"><img src="study-guild.jpg" alt="Open Bible" class="studyimg"></div>
+      </div>
+
+      <!-- Text Content -->
+      <div class="study-guild-text">
+        <p>
+          The Study Guide is a learning hub dedicated to the study of Scripture and
+          Christian teaching. Through guided lessons, prayer, and discussion,
+          members grow in faith, wisdom, and spiritual understanding.
+        </p>
+
+        <ul>
+          <li>In-depth Bible study and discussion</li>
+          <li>Christian teaching and reflection</li>
+          <li>Prayer and spiritual growth</li>
+          <li>Supportive fellowship</li>
+        </ul>
+
+        <div class="study-guild-info">
+          <p><strong>Location:</strong> Church Fellowship Hall</p>
+          <p><strong>Time:</strong> Wednesdays, 6:00 - 7:30 PM</p>
+        </div>
+
+        <a href="#" class="study-guild-btn">Join the Study Guide</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modern Bible Study Section -->
+<section class="bible-study-section">
+  <div class="bible-study-container">
+    
+    <!-- Header -->
+    <div class="study-header">
+      <h2>Built for Teen Bible Study</h2>
+      <p>Explore Scripture with guided lessons, memory verses, and study accountability.</p>
+    </div>
+
+    <!-- Study Categories & Topics -->
+    <div class="study-layout">
+      
+      <!-- Left Panel: Categories & Topics -->
+      <div class="study-sidebar">
+        <div class="categories-container">
+          <h3>Study Categories</h3>
+          
+          <!-- Accordion Section -->
+          <div class="accordion">
+            <!-- Bible Characters -->
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <span>📖 Bible Characters</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <div class="topic-list">
+                  <button class="topic-btn" onclick="selectTopic('David', 'characters')">David</button>
+                  <button class="topic-btn" onclick="selectTopic('Joseph', 'characters')">Joseph</button>
+                  <button class="topic-btn" onclick="selectTopic('Moses', 'characters')">Moses</button>
+                  <button class="topic-btn" onclick="selectTopic('Esther', 'characters')">Esther</button>
+                  <button class="topic-btn" onclick="selectTopic('Paul', 'characters')">Paul</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Life Teachings -->
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <span>💡 Life Teachings</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <div class="topic-list">
+                  <button class="topic-btn" onclick="selectTopic('Faith', 'teachings')">Faith</button>
+                  <button class="topic-btn" onclick="selectTopic('Prayer', 'teachings')">Prayer</button>
+                  <button class="topic-btn" onclick="selectTopic('Forgiveness', 'teachings')">Forgiveness</button>
+                  <button class="topic-btn" onclick="selectTopic('Obedience', 'teachings')">Obedience</button>
+                  <button class="topic-btn" onclick="selectTopic('Patience', 'teachings')">Patience</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teen Challenges -->
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <span>🎯 Teen Challenges</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <div class="topic-list">
+                  <button class="topic-btn" onclick="selectTopic('Purpose', 'challenges')">Purpose</button>
+                  <button class="topic-btn" onclick="selectTopic('Peer Pressure', 'challenges')">Peer Pressure</button>
+                  <button class="topic-btn" onclick="selectTopic('Identity in Christ', 'challenges')">Identity in Christ</button>
+                  <button class="topic-btn" onclick="selectTopic('Discipline', 'challenges')">Discipline</button>
+                  <button class="topic-btn" onclick="selectTopic('Social Media', 'challenges')">Social Media</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book Studies -->
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <span>📚 Book Studies</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <div class="topic-list">
+                  <button class="topic-btn" onclick="selectTopic('Genesis', 'books')">Genesis</button>
+                  <button class="topic-btn" onclick="selectTopic('Psalms', 'books')">Psalms</button>
+                  <button class="topic-btn" onclick="selectTopic('John', 'books')">John</button>
+                  <button class="topic-btn" onclick="selectTopic('Romans', 'books')">Romans</button>
+                  <button class="topic-btn" onclick="selectTopic('1 John', 'books')">1 John</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel: Study Content -->
+      <div class="study-main">
+        
+        <!-- Study Details (Hidden by default) -->
+        <div id="study-details" class="study-details hidden">
+          
+          <!-- Title -->
+          <div class="study-card">
+            <h3 id="study-title" class="study-title">Select a Study Topic</h3>
+            
+            <!-- Key Verse -->
+            <div class="study-section">
+              <h4>📌 Key Verse</h4>
+              <p id="key-verse" class="verse-text">Select a topic to view the key verse</p>
+            </div>
+
+            <!-- Reading Passage -->
+            <div class="study-section">
+              <h4>📖 Reading Passage</h4>
+              <p id="reading-passage" class="passage-text">Select a topic to view the reading passage</p>
+            </div>
+
+            <!-- Main Lesson -->
+            <div class="study-section">
+              <h4>💭 Main Lesson</h4>
+              <p id="main-lesson" class="lesson-text">Select a topic to view the main lesson</p>
+            </div>
+
+            <!-- Reflection -->
+            <div class="study-section">
+              <h4>🤔 Reflection</h4>
+              <p id="reflection" class="reflection-text">Select a topic to view reflection questions</p>
+            </div>
+
+            <!-- Prayer Section -->
+            <div class="study-section prayer-section">
+              <h4>🙏 Prayer</h4>
+              <textarea id="prayer-notes" class="prayer-textarea" placeholder="Write your prayer here..."></textarea>
+              <button class="prayer-btn" onclick="savePrayer()">Save Prayer</button>
+            </div>
+          </div>
+
+          <!-- Bible Reader -->
+          <div class="bible-reader-card">
+            <h4>📖 Bible Reader</h4>
+            <p class="reader-info">Embed your preferred Bible API below (Bible.com, YouVersion, etc.)</p>
+            <iframe 
+              id="bible-reader" 
+              class="bible-iframe" 
+              src="about:blank" 
+              title="Bible Reader">
+            </iframe>
+            <p class="reader-note">Connect to Bible API for dynamic verse loading</p>
+          </div>
+        </div>
+
+        <!-- Welcome Message (Show by default) -->
+        <div id="welcome-message" class="welcome-card">
+          <h3>Welcome to Interactive Bible Study</h3>
+          <p>Select a category and topic from the left panel to begin your study journey. Explore Scripture, discover insights, and grow in your faith.</p>
+          <div class="welcome-tips">
+            <h4>📚 How to Use:</h4>
+            <ul>
+              <li>Click on a category to expand and view topics</li>
+              <li>Select a topic to view detailed study material</li>
+              <li>Read and reflect on the passage</li>
+              <li>Write your personal prayer and thoughts</li>
+              <li>Use the Bible reader to explore related verses</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Daily Memory Verse Card -->
+    <div class="memory-verse-container">
+      <div class="memory-verse-card">
+        <div class="memory-verse-header">
+          <h4>💾 Daily Memory Verse</h4>
+          <button class="refresh-btn" onclick="refreshMemoryVerse()">🔄</button>
+        </div>
+        <p id="memory-verse-text" class="memory-verse-text">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope." - Jeremiah 29:11</p>
+        <p id="memory-verse-ref" class="memory-verse-ref">Jeremiah 29:11</p>
+        <button class="mark-learned-btn" onclick="markMemoryVerseLearned()">✓ Mark as Learned</button>
+      </div>
+    </div>
+
+    <!-- Study Progress Card -->
+    <div class="progress-container">
+      <div class="progress-card">
+        <h4>📊 Study Progress</h4>
+        
+        <div class="progress-item">
+          <div class="progress-header">
+            <span>Overall Progress</span>
+            <span id="overall-percentage" class="percentage">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div id="overall-progress" class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <div class="progress-header">
+            <span>Current Study</span>
+            <span id="current-percentage" class="percentage">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div id="current-progress" class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="completed-studies">
+          <h5>Completed Studies</h5>
+          <p id="completed-count">0 studies completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <script src="script.js"></script>
+    <script src="bible-study.js"></script>
+</body>
+</html>

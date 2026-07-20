@@ -1,0 +1,1149 @@
+/* Styles for Study Guide page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: rgb(223, 223, 234);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgb(12, 133, 176);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 23px;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 9px;
+    margin-top: 10px;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background: black;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: rgba(5, 240, 224, 0.829);
+    width: 200px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    padding-bottom: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(221, 147, 9);
+    font-weight: bold;
+}
+
+.imag {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.study-guild {
+    background-color: #e4faf6a7;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.study-guild-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.study-guild-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.study-guild-header h2 {
+    font-size: 36px;
+    color: #3b2f2f;
+    margin-bottom: 10px;
+}
+
+.study-guild-header p {
+    font-size: 18px;
+    color: #6b5f5f;
+}
+
+.study-guild-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bible-image {
+    flex: 1;
+    text-align: center;
+}
+
+.studyimg {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.604);
+}
+
+.study-guild-text {
+    flex: 1;
+    color: #3b2f2f;
+}
+
+.study-guild-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.study-guild-text ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.study-guild-text ul li {
+    margin-bottom: 10px;
+}
+
+.study-guild-info p {
+    margin-bottom: 8px;
+}
+
+.study-guild-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #6b4f3f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.study-guild-btn:hover {
+    background-color: #563c2e;
+}
+
+@media (min-width: 768px) {
+    .imag {
+        width: 120px;
+    }
+
+    .studyimg {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* ===== MODERN BIBLE STUDY SECTION ===== */
+
+.bible-study-section {
+    background:
+    #e4faf6a7 ;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.bible-study-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.study-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.study-header h2 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.study-header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ===== STUDY LAYOUT (Two Column) ===== */
+
+.study-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.study-sidebar {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    height: fit-content;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.categories-container h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+/* ===== ACCORDION STYLES ===== */
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 12px;
+    background: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #e8e8e8;
+    transform: translateX(5px);
+}
+
+.accordion-header .icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active .icon {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 0;
+    background: white;
+}
+
+.accordion-content.active {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.topic-btn {
+    padding: 10px 12px;
+    background: #f9f9f9;
+    border: none;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    text-align: left;
+    font-size: 13px;
+    color: #555;
+    transition: all 0.2s ease;
+}
+
+.topic-btn:hover {
+    background: #f0f0f0;
+    border-left-color: #667eea;
+    padding-left: 15px;
+}
+
+.topic-btn.active {
+    background: #667eea;
+    color: white;
+    border-left-color: #667eea;
+    font-weight: 600;
+}
+
+/* ===== STUDY MAIN CONTENT ===== */
+
+.study-main {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    min-height: 400px;
+}
+
+.study-details {
+    display: none;
+}
+
+.study-details.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.study-details.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-card {
+    text-align: center;
+    padding: 40px;
+}
+
+.welcome-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+.welcome-card p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.welcome-tips {
+    text-align: left;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.welcome-tips h4 {
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+.welcome-tips ul {
+    padding-left: 20px;
+    color: #666;
+}
+
+.welcome-tips li {
+    margin-bottom: 8px;
+}
+
+/* ===== STUDY CARD STYLES ===== */
+
+.study-card {
+    margin-bottom: 30px;
+}
+
+.study-title {
+    font-size: 28px;
+    color: #333;
+    margin: 0 0 25px 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+.study-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.study-section h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.study-section p {
+    margin: 0;
+    color: #555;
+    line-height: 1.7;
+}
+
+.verse-text, .passage-text, .lesson-text, .reflection-text {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ===== PRAYER SECTION ===== */
+
+.prayer-section {
+    background: #f0f4ff !important;
+    border-left-color: #764ba2 !important;
+}
+
+.prayer-textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.prayer-textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.prayer-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.prayer-btn:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* ===== BIBLE READER ===== */
+
+.bible-reader-card {
+    background: #f0f4ff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    margin-top: 25px;
+}
+
+.bible-reader-card h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.reader-info {
+    color: #666;
+    font-size: 13px;
+    margin: 0 0 15px 0;
+}
+
+.bible-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+}
+
+.reader-note {
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ===== MEMORY VERSE CARD ===== */
+
+.memory-verse-container {
+    margin: 40px 0;
+}
+
+.memory-verse-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.memory-verse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.memory-verse-header h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.refresh-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.refresh-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(180deg);
+}
+
+.memory-verse-text {
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px 0;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.memory-verse-ref {
+    font-size: 14px;
+    margin: 15px 0;
+    opacity: 0.9;
+}
+
+.mark-learned-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: white;
+    color: #f5576c;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.mark-learned-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== PROGRESS CARD ===== */
+
+.progress-container {
+    margin: 40px 0;
+}
+
+.progress-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.progress-card h4 {
+    margin: 0 0 25px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.progress-item {
+    margin-bottom: 25px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.percentage {
+    color: #667eea;
+    font-weight: 700;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.completed-studies {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.completed-studies h5 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.completed-studies p {
+    margin: 0;
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 1024px) {
+    .study-layout {
+        grid-template-columns: 250px 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bible-study-section {
+        padding: 20px 10px;
+    }
+
+    .study-header h2 {
+        font-size: 24px;
+    }
+
+    .study-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .study-sidebar {
+        order: 2;
+        height: auto;
+    }
+
+    .study-main {
+        order: 1;
+        padding: 20px;
+    }
+
+    .study-main .welcome-card {
+        padding: 20px;
+    }
+
+    .memory-verse-card {
+        padding: 20px;
+    }
+
+    .memory-verse-text {
+        font-size: 16px;
+    }
+
+    .study-title {
+        font-size: 22px;
+    }
+
+    .study-section {
+        padding: 15px;
+    }
+
+    .bible-iframe {
+        height: 250px;
+    }
+
+    .progress-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bible-study-container {
+        padding: 0;
+    }
+
+    .study-sidebar {
+        padding: 15px;
+    }
+
+    .study-main {
+        padding: 15px;
+    }
+
+    .study-header h2 {
+        font-size: 20px;
+    }
+
+    .study-title {
+        font-size: 18px;
+    }
+
+    .memory-verse-text {
+        font-size: 14px;
+    }
+
+    .topic-btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .memory-verse-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .refresh-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+/* ===== NEW DESIGN OVERLAY ===== */
+body {
+    background: linear-gradient(180deg, #eef7fb 0%, #f8fbff 100%);
+    color: #102a43;
+}
+
+main {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 20px 24px 40px;
+}
+
+.page-header {
+    padding: 28px 0 10px;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 18px;
+    background: #0c85b0;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.eyebrow {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #0e4a69;
+    margin-bottom: 6px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.05;
+    color: #102a43;
+}
+
+.nav-toggle {
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: #0c85b0;
+    border-radius: 16px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #ffffff;
+    margin: 4px 0;
+    border-radius: 999px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #102a43;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+    color: #0c85b0;
+}
+
+.hero-section {
+    background: #ffffff;
+    border-radius: 32px;
+    padding: 44px 42px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 32px;
+    align-items: center;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+    margin-bottom: 32px;
+}
+
+.hero-copy {
+    max-width: 640px;
+}
+
+.hero-eyebrow {
+    color: #0c85b0;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+.hero-section h2 {
+    font-size: clamp(2.75rem, 3.5vw, 4rem);
+    margin: 0;
+    line-height: 1.03;
+    color: #102a43;
+}
+
+.hero-section p {
+    max-width: 610px;
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 22px 0 0;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    margin-top: 28px;
+    border-radius: 999px;
+    background: #0c85b0;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 14px 30px rgba(12, 133, 176, 0.22);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    background: #096d88;
+}
+
+.hero-visual {
+    display: grid;
+}
+
+.hero-visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    object-fit: cover;
+    box-shadow: 0 28px 70px rgba(15, 23, 42, 0.12);
+}
+
+.study-guild,
+.bible-study-section {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
+}
+
+.study-guild-header h2,
+.study-header h2 {
+    color: #102a43;
+    margin-bottom: 12px;
+}
+
+.study-guild-header p,
+.study-header p {
+    color: #475569;
+}
+
+.study-guild-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.bible-image {
+    text-align: center;
+}
+
+.studyimg {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+.study-guild-text {
+    color: #344054;
+}
+
+.study-guild-btn {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 14px 30px;
+    background-color: #0c85b0;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.study-guild-btn:hover {
+    background-color: #096d88;
+    transform: translateY(-2px);
+}
+
+.study-section {
+    margin-bottom: 22px;
+    padding: 22px;
+    background: #f8fbff;
+    border-radius: 18px;
+    border-left: 5px solid #0c85b0;
+}
+
+.study-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #102a43;
+}
+
+.study-section p {
+    margin: 0;
+    color: #475569;
+}
+
+.bible-reader-card,
+.memory-verse-card,
+.progress-card,
+.study-main,
+.study-sidebar {
+    border-radius: 22px;
+}
+
+.memory-verse-card,
+.progress-card,
+.study-main,
+.study-sidebar {
+    padding: 28px;
+}
+
+.bible-reader-card {
+    padding: 24px;
+}
+
+.memory-verse-card {
+    margin-top: 30px;
+}
+
+.memory-verse-header h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.memory-verse-text {
+    font-size: 17px;
+    margin: 20px 0 0;
+    line-height: 1.8;
+}
+
+.mark-learned-btn,
+.prayer-btn {
+    border-radius: 999px;
+}
+
+.progress-card h4 {
+    margin-bottom: 24px;
+}
+
+.progress-bar {
+    background: #e7f4ff;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #0c85b0 0%, #12739f 100%);
+}
+
+@media (max-width: 1024px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding: 32px;
+    }
+
+    .study-guild-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-row {
+        align-items: flex-start;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: calc(100% - 32px);
+        background: #ffffff;
+        border-radius: 22px;
+        padding: 18px 18px 22px;
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .hero-section {
+        padding: 28px;
+    }
+
+    .study-guild,
+    .bible-study-section {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 580px) {
+    .hero-section {
+        padding: 20px;
+    }
+
+    .hero-section h2 {
+        font-size: 2.25rem;
+    }
+
+    .study-guild,
+    .bible-study-section {
+        border-radius: 22px;
+    }
+
+    .hero-btn,
+    .study-guild-btn,
+    .mark-learned-btn,
+    .prayer-btn {
+        width: 100%;
+    }
+}

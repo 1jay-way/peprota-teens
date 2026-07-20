@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: "poppins" ,sans-serif;
+    color: rgb(223, 223, 234);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+
+/* ===== HEADER STYLES ===== */
+
+/* Main header container */
+header{
+    background-color: rgb(12, 133, 176);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 23px;
+}
+
+/* Top header section containing hamburger menu and title */
+.top-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 9px;
+    margin-top: 10px;
+}
+
+/* Hamburger menu button (three lines) */
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+
+/* Individual lines in hamburger menu */
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background: black;
+    transition: 0.3s;
+}
+
+/* ===== NAVIGATION MENU STYLES ===== */
+
+/* Dropdown navigation menu */
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: rgba(5, 240, 224, 0.829);
+    width: 200px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    padding-bottom: 20px;
+}
+
+/* Navigation menu list */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-menu li {
+    padding: 10px;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(221, 147, 9);
+    font-weight: bold;
+}
+
+/* ===== LOGO AND GENERAL ELEMENTS ===== */
+
+/* Logo image in header */
+.imag{ 
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.study-guild {
+  background-color: #e4faf6a7;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.study-guild-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.study-guild-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.study-guild-header h2 {
+  font-size: 36px;
+  color: #3b2f2f;
+  margin-bottom: 10px;
+}
+
+.study-guild-header p {
+  font-size: 18px;
+  color: #6b5f5f;
+}
+
+.study-guild-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bible-image {
+  flex: 1;
+  text-align: center;
+
+}
+
+.studyimg{
+width: 250px;
+height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.604);
+}
+
+.study-guild-text {
+  flex: 1;
+  color: #3b2f2f;
+}
+
+.study-guild-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.study-guild-text ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.study-guild-text ul li {
+  margin-bottom: 10px;
+}
+
+.study-guild-info p {
+  margin-bottom: 8px;
+}
+
+.study-guild-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #6b4f3f;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.study-guild-btn:hover {
+  background-color: #563c2e;
+}
+@media (min-width: 768px) {
+    .imag {
+        width: 120px;
+        
+    }
+    .studyimg{
+        width: 400px;
+        height: 400px;
+    }
+  }
+
+

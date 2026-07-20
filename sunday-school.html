@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday School - RCCG Teen Affair</title>
+    <link rel="stylesheet" href="sunday-school.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Sunday School</h1>
+        </div>
+        <img src="logo.jpg" alt="RCCG LOGO" class="imag">
+    </header>
+    <nav id="nav-menu" class="nav-menu">
+        <ul>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sunday-school.html">Sunday School</a></li>
+            <li><a href="study-guide.html">Study Guide</a></li>
+            <li><a href="counselling.html">Guilding And Counselling</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="about">
+                <h2>Sunday School</h2>
+                <p>Join our Sunday School sessions to deepen your understanding of the Bible. We offer engaging lessons and activities for teens to grow in their faith.</p>
+            </div>
+        </div>
+    </main>    
+        <script src="script.js">
+function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+        </script>
+
+</head>
+</body>

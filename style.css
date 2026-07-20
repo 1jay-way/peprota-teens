@@ -1,0 +1,379 @@
+/* Global page styles */
+:root {
+    color-scheme: dark;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #102a43;
+    background: #eef7fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #eef7fb 0%, #f8fbff 100%);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body, button, input, textarea {
+    font: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.page-header {
+    padding: 24px 32px;
+}
+
+.header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand-mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    background: #0c85b0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.brand-label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #0c85b0;
+    margin-bottom: 6px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 1.85rem;
+    line-height: 1.1;
+}
+
+.main-nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #102a43;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: #0c85b0;
+}
+
+main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px 40px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 32px;
+    align-items: center;
+    background: #fff;
+    border-radius: 32px;
+    padding: 42px;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+    margin-bottom: 32px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    padding: 10px 18px;
+    background: #e3f6ff;
+    color: #0c85b0;
+    font-weight: 700;
+    border-radius: 999px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.hero h2 {
+    margin: 20px 0 16px;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    color: #102a43;
+    line-height: 1.02;
+}
+
+.hero p {
+    margin: 0;
+    max-width: 620px;
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 14px 26px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #0c85b0;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #096d88;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: #f0f8ff;
+    color: #0c85b0;
+}
+
+.btn-secondary:hover {
+    background: #ddefff;
+}
+
+.hero-card {
+    background: linear-gradient(180deg, #e8f6ff 0%, #f8fbff 100%);
+    border: 1px solid rgba(12, 133, 176, 0.12);
+    border-radius: 28px;
+    padding: 32px;
+}
+
+.hero-card h3 {
+    margin: 0 0 18px;
+    color: #102a43;
+}
+
+.hero-card p {
+    margin: 0 0 28px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.hero-stats div {
+    background: #fff;
+    border-radius: 20px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.hero-stats span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0c85b0;
+}
+
+.hero-stats p {
+    margin: 10px 0 0;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.info-card,
+.courses-card,
+.schedule-card,
+.contact-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 28px;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
+}
+
+.info-card h2,
+.schedule-section h2,
+.form-section h2,
+.contact-card h2 {
+    margin-top: 0;
+    color: #102a43;
+}
+
+.courses-card h3 {
+    margin-top: 0;
+    color: #102a43;
+}
+
+.courses-card ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 18px 0 0;
+    color: #475569;
+}
+
+.courses-card li {
+    margin-bottom: 12px;
+}
+
+.schedule-section,
+.form-section,
+.contact-section {
+    margin-bottom: 32px;
+}
+
+.section-header {
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    margin: 8px 0 0;
+    color: #475569;
+    line-height: 1.75;
+}
+
+.schedule-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-card th,
+.schedule-card td {
+    text-align: left;
+    padding: 16px 18px;
+    border-bottom: 1px solid #e8f1f9;
+}
+
+.schedule-card th {
+    color: #102a43;
+    font-weight: 700;
+}
+
+.schedule-card tr:last-child td {
+    border-bottom: none;
+}
+
+.registration-form,
+.contact-form {
+    display: grid;
+    gap: 18px;
+    background: #fff;
+    border-radius: 28px;
+    padding: 28px;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
+}
+
+.registration-form label,
+.contact-form label {
+    display: grid;
+    gap: 10px;
+    font-weight: 600;
+    color: #102a43;
+}
+
+.registration-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #dbe8f3;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 0.95rem;
+    color: #102a43;
+    background: #f8fbff;
+}
+
+.registration-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.registration-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #0c85b0;
+    box-shadow: 0 0 0 4px rgba(12, 133, 176, 0.08);
+}
+
+@media (max-width: 960px) {
+    .hero,
+    .section-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .page-header,
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-inner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .hero,
+    .section-grid,
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card,
+    .info-card,
+    .courses-card,
+    .schedule-card,
+    .registration-form,
+    .contact-card {
+        padding: 22px;
+    }
+}
